@@ -1,4 +1,4 @@
-<h1 align="center">not-xen0n's lua projects</h1>
+<h1 align="center">xlp</h1>
 <h2 align = "center">
 <img src="https://img.shields.io/bitbucket/issues-raw/not-weuz/Lua">
 <img src="https://img.shields.io/github/last-commit/not-weuz/Lua">
