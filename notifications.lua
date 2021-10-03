@@ -12,7 +12,7 @@ function Notify(text, time)
         local TextLabel_2 = Instance.new("TextLabel")
         local Loading = Instance.new("Frame")
         
-        Notification.Parent = game.Players.LocalPlayer.PlayerGui
+        Notification.Parent = game.StarterGui
         Notification.Name = "Notification"
         Notification.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
         
@@ -69,7 +69,7 @@ function Notify(text, time)
         Loading.Position = UDim2.new(0.0299999993, 0, 0.830000024, 0)
         Loading.Size = UDim2.new(0, 265, 0, 5)
         count = 1
-        for i,v in pairs(game.Players.LocalPlayer.PlayerGui:GetChildren()) do
+        for i,v in pairs(game.StarterGui:GetChildren()) do
             if v.Name == "Notification" and v ~= Notification then
                 count = count + 1
             end
