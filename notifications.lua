@@ -78,6 +78,7 @@ function Notify(text, time)
         for i = 1, count do
             Frame.Position = UDim2.new(0, Notification.AbsoluteSize.X, 0, Notification.AbsoluteSize.Y-Frame.Size.Y.Offset-(75*i))
         end
+        --[[
         wait(0,1)
         Frame:TweenPosition(Frame.Position+UDim2.new(0,-300,0,0), "Out", "Sine", 0.5)
         wait(0.5)
@@ -88,5 +89,19 @@ function Notify(text, time)
         wait(1)
         Notification:Destroy();
         count = count - 1
+        ]]
+        delay(0.1, function()
+            Frame:TweenPosition(Frame.Position+UDim2.new(0,-300,0,0), "Out", "Sine", 0.5)
+            delay(0.5, function()
+                Loading:TweenSize(UDim2.new(0,0,0,5), "Out", "Sine", time)
+                delay(time, function()
+                    Frame:TweenPosition(Frame.Position+UDim2.new(0,300,0,0), "Out", "Sine", 1)
+                    delay(1, function()
+                        Notification:Destroy();
+                        count = count - 1
+                    end)
+                end)
+            end)
+        end)
     end)
 end
