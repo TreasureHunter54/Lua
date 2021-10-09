@@ -6,10 +6,10 @@
       \  /\  / ____ \| | \ \| |\  |_| |_| |\  | |__| |
        \/  \/_/    \_\_|  \_\_| \_|_____|_| \_|\_____|
   
-  This is a customized version of xlp UI for me. I am not the creator of xlp UI, I just modified it                                                 
+  This is a customized & forked version of finity UI for me. I am not the creator of finity UI, I just modified it                                                 
    
-	xlp author:
-		detourious @ v3rmillion.net
+finity author:
+	detourious @ v3rmillion.net
   Me:
     w3uz @ v3rmillion.net					
 --]]
