@@ -1,6 +1,6 @@
 local g = game
 for i, v in pairs(g:GetDescendants()) do
-    if v:IsA("Decal") or v:IsA("Texture") then
-        v.Transparency = 1
+    if v:IsA("Decal") then
+        v:Destroy()
     end
 end
